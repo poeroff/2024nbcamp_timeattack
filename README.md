@@ -1,73 +1,79 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+![image](https://github.com/poeroff/2024nbcamp_timeattack/assets/80104001/9f8ad418-f01b-4a2e-83e3-323da8857319)
 
-## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
 
-```bash
-$ npm install
-```
 
-## Running the app
 
-```bash
-# development
-$ npm run start
 
-# watch mode
-$ npm run start:dev
 
-# production mode
-$ npm run start:prod
-```
 
-## Test
+        
 
-```bash
-# unit tests
-$ npm run test
+POST(URL :  http://localhost:3000/account/register) 기능 : 회원가입 
 
-# e2e tests
-$ npm run test:e2e
 
-# test coverage
-$ npm run test:cov
-```
+          
+          request : 
+          {
+              "email" : "test@naver.com",
+              "password" : "test123",
+              "confirmPassword" : "test123",
+              "name" : "choi",
+              "phonenumber": "???-???-???"
+          }
+          
+          response : 
+        
+        성공 : 
+        {
+            "id": 4,
+            "email": "chlxodud09@naver.com",
+            "name": "choi",
+            "createdAt": "2024-01-06T05:22:32.339Z"
+        }
+        
+        
+        실패 : 
+        {
+            "success": false,
+            "timestamp": "2024-01-06T05:15:05.466Z",
+            "path": "/account/register",
+            "error": "이미 존재하는 이메일입니다"
+        }
+    POST(URL : http://localhost:3000/account/login) 기능 : 로그인 
+    
+    request : 
+          {
+              "email" : "chlxodud07@naver.com",
+              "password" : "wqdsdsf12"
+          }
+          
+    response :
+    성공 : 
+    {
+      "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJjaGx4b2R1ZDA3QG5hdmVyLmNvbSIsImlhdCI6MTcwNDUxODY1NX0.bHz3qDG6zDEpuiq8YLYzVdzoK5y_PjLBnDX4n1BE14o"
+    }
 
-## Support
+    실패 : 
+    {
+    "success": false,
+    "timestamp": "2024-01-06T05:15:46.514Z",
+    "path": "/account/login",
+    "error": "비밀번호를 확인해주세요."
+    },
+    {
+    "success": false,
+    "timestamp": "2024-01-06T05:24:07.012Z",
+    "path": "/account/login",
+    "error": "등록되지 않은 이메일입니다"
+    }
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
+  단
+    
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
-## License
 
-Nest is [MIT licensed](LICENSE).
