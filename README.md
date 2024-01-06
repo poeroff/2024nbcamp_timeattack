@@ -81,7 +81,7 @@ POST(URL :  http://localhost:3000/account/register) 기능 : 회원가입
     Jwt토큰을 사용하여 인증을 처리하는 미들웨어 작성
 
 
-  단
+
     
 
 
