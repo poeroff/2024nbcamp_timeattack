@@ -15,7 +15,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
     }),
     inject: [ConfigService],
   }),
-  TypeOrmModule.forFeature([Account])],
+  TypeOrmModule.forFeature([Account]), ],
   controllers: [AccountController],
   providers: [AccountService],
   exports : [AccountService]
