@@ -27,7 +27,9 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
 
     return user;
   }
-  async acb
+  async acb(){
+     console.log("heelo")
+  }
 
   
 
