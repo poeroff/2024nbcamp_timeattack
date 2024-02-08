@@ -27,7 +27,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
 
     return user;
   }
-  async abc(payload) {
+  async abc
 
   
 
