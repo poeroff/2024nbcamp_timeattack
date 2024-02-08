@@ -28,6 +28,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
       - run: npm ci
-      - run: npm run build --if-present
+      - run: npm run start:dev
       - run: npm test
    
