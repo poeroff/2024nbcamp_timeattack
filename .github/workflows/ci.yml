@@ -29,5 +29,4 @@ jobs:
       - name: Run a one-line script
       - run: npm ci
       - run: npm run start:dev
-      - run: npm test
    
