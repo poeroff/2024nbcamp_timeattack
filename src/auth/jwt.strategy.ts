@@ -28,8 +28,8 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     return user;
   }
   async ac(){
-    이건 오류 나겠지?
     
+
 
 
 
