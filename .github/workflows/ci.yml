@@ -19,6 +19,4 @@ jobs:
         run: npm ci
 
       - name: Start development server
-        run: npm run build
-        env:
-          CI: ''
+        run: npm run start:dev
